@@ -1,0 +1,30 @@
+Feature: Test Security
+  As an IT administrator
+  Test the defense of company on DDoS Attacks
+  I want to simulate an attack
+
+Scenario: Simulated DDoS attack
+  When I go to the home page
+  And I fill in "IP address" with "192.168.0.1"
+  Then I should see "Attacking Ip Address 192.168.0.1"
+
+
+Feature: Map Network
+  As an IT administrator
+  So I can see the layout of the companies network
+  I want to map out the local area network
+
+Scenario: Mapping Network
+  When I go to the home page
+  And I click on "map network"
+  Then I should see All Ip addresses and associated ip addresses on the LAN
+
+Feature: Map out users on Network
+  As an IT administrator
+  So I can who is on the network
+  View the people currently using the network (Wireless and wired)
+
+Scenario: Seeing non compliant users
+  When I go to the home page
+  And I click on "See users"
+  Then I should see All Ip addresses using the network
