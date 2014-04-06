@@ -1,6 +1,6 @@
 Feature: Map Network
   As an IT administrator
-  So I can see the layout of the companies network
+  So I can assess the companies network for security threats
   I want to map out the local area network
 
 Scenario: Mapping Network
